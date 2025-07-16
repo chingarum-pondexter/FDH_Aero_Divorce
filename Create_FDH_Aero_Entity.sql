@@ -11,7 +11,7 @@ div.division_name,
 syscm.company_name,
 dept.DPT_AUTO_KEY,
 case 
-    when DPT_AUTO_KEY = 106 then 'Calco'
+    when DPT_AUTO_KEY in (106,107,108,109,110,111,112,113,114) then 'Calco'
     when COMPANY_NAME = 'FDH AERO, LLC' and division_name = 'EMEA' then 'FDH Aero EMEA'
     when COMPANY_NAME = 'FDH AERO, LTD' then 'FDH Aero UK'
     when COMPANY_NAME = 'FDH AERO, LLC' and division_name = 'APAC' then 'FDH Aero APAC'
